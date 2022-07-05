@@ -11,8 +11,8 @@ console.log(styledMessage)
 
 
 
-
-import figlet from 'figlet';
+var figlet = require('figlet');
+import figlet from 'figlet'
 
 figlet('Hello World!!', function(err, data) {
     if (err) {
