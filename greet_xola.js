@@ -11,10 +11,16 @@ console.log(styledMessage)
 
 
 
+import figlet from 'figlet';
 
-
-
-
+figlet('Hello, Xola!', function(err, data) {
+    if (err) {
+        console.log('Something went wrong...');
+        console.dir(err);
+        return;
+    }
+    console.log(data)
+});
 
 
 // const error = chalk.bold.red;
